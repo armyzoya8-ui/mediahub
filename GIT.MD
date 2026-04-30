@@ -15,3 +15,14 @@ git remote add origin<url>
 git push origin master
 where master is referencing the default branch where 
 work will be saved
+
+
+AFTER LOGIN PROCEED TO DO PUSH
+
+### to get project on a new device
+- select project saving location - open terminal gere
+- git clone linktorepo
+###  to update project repo
+- git add .
+- git commit -m "commit msg here"
+- git push -u origin master/main
