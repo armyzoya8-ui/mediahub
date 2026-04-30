@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts' ,
     'media_assets' ,
     'cloudinary' ,
+    'mediampesa' ,
     
 
 ]
@@ -67,11 +68,11 @@ CLOUDINARY_CONFIGS = {
 cloudinary.config(**CLOUDINARY_CONFIGS)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',  # REQUIRED
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',  # REQUIRED
+    'django.contrib.messages.middleware.MessageMiddleware',  # REQUIRED
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
